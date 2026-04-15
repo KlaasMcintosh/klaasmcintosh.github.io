@@ -1,193 +1,43 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klaas McIntosh | Beach Volleyball Athlete</title>
+    <title>My Website</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
-
-        :root {
-            --primary-bg: #0a0a0a;
-            --accent-gold: #c5a059;
-            --text-main: #ffffff;
-            --text-dim: #a0a0a0;
-            --card-bg: #161616;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--primary-bg);
-            color: var(--text-main);
-            line-height: 1.6;
-            overflow-x: hidden;
+            background-color: #111;
+            color: white;
+            font-family: Arial, sans-serif;
         }
-
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1592656094267-764a45160876?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-            background-size: cover;
-            background-position: center;
-            padding: 0 20px;
-        }
-
-        .hero-content {
-            max-width: 800px;
-        }
-
-        .hero-content h1 {
-            font-size: clamp(3rem, 10vw, 6rem);
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -2px;
-            margin-bottom: 10px;
-            line-height: 0.9;
-        }
-
-        .hero-content .subtitle {
-            font-size: 1.2rem;
-            color: var(--accent-gold);
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            margin-bottom: 30px;
-            font-weight: 700;
-        }
-
-        .hero-content p {
-            font-size: 1.1rem;
-            color: var(--text-dim);
-            margin-bottom: 40px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .btn-asf {
-            display: inline-block;
-            background-color: var(--accent-gold);
-            color: #000;
-            padding: 18px 40px;
-            font-weight: 900;
-            text-transform: uppercase;
-            text-decoration: none;
-            letter-spacing: 1px;
-            border-radius: 4px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .btn-asf:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(197, 160, 89, 0.3);
-        }
-
-        /* Socials */
-        .socials {
-            margin-top: 40px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .socials a {
-            color: var(--text-main);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            opacity: 0.7;
-            transition: opacity 0.3s;
-        }
-
-        .socials a:hover {
-            opacity: 1;
-        }
-
-        /* Stats Grid */
-        .stats {
-            background-color: var(--card-bg);
-            padding: 60px 20px;
+        .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            max-width: 1200px;
-            margin: -60px auto 60px;
-            border-radius: 8px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-            position: relative;
-            z-index: 10;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 20px;
+            background-color: #222;
         }
-
-        .stat-item {
-            text-align: center;
-        }
-
-        .stat-item .val {
-            display: block;
-            font-size: 2.5rem;
-            font-weight: 900;
-            color: var(--accent-gold);
-        }
-
-        .stat-item .label {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            color: var(--text-dim);
-            letter-spacing: 1px;
-        }
-
-        @media (max-width: 768px) {
-            .hero-content h1 { font-size: 3.5rem; }
-            .stats { margin: 0 20px 40px; grid-template-columns: 1fr 1fr; }
+        .gallery-item {
+            background-color: #333;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ccc;
+            border: 1px solid #444;
         }
     </style>
 </head>
 <body>
-
-    <section class="hero">
-        <div class="hero-content">
-            <p class="subtitle">Professional Beach Volleyball</p>
-            <h1>Klaas McIntosh</h1>
-            <p>From the sands of Melbourne to the world stage. Currently ranked #17 in Australia, I am embarking on the 2026 European Tour to establish a base in Hamburg, Germany, and chase my ultimate dream: Olympic Gold.</p>
-            <a href="https://asf.org.au/" class="btn-asf">Support My Journey</a>
-            
-            <div class="socials">
-                <a href="https://instagram.com/klaasmcintosh" target="_blank">Instagram</a>
-                <a href="#">YouTube</a>
-            </div>
-        </div>
+    <section class="stats">
+        <h2>Stats Section</h2>
+        <!-- Existing stats content goes here -->
     </section>
-
-    <div class="stats">
-        <div class="stat-item">
-            <span class="val">#17</span>
-            <span class="label">Australian Rank</span>
-        </div>
-        <div class="stat-item">
-            <span class="val">2026</span>
-            <span class="label">Germany Tour</span>
-        </div>
-        <div class="stat-item">
-            <span class="val">22</span>
-            <span class="label">Years Old</span>
-        </div>
-        <div class="stat-item">
-            <span class="val">GOLD</span>
-            <span class="label">Olympic Goal</span>
-        </div>
-    </div>
-
+    <section class="gallery">
+        <div class="gallery-item">Image 1</div>
+        <div class="gallery-item">Image 2</div>
+        <div class="gallery-item">Image 3</div>
+        <div class="gallery-item">Image 4</div>
+    </section>
 </body>
 </html>
